@@ -5,10 +5,17 @@
     box-sizing: border-box;
 }
 body{
+    color: white;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: <weight>;
     font-style: normal;
+}
+:root {
+	--color-bottom-toolbar: #282828;
+	--color-sidebar-black: #000000;
+	--color-main-background: #141922;
+	--color-artist-gray: #d7d8d9;
 }
 .debug{
     border: 2px solid red;
@@ -19,15 +26,14 @@ body{
     /* overflow: hidden; */
 }
 #toolbar{
-    background-color: blue;
+    background-color: var(--color-bottom-toolbar);
     height: 90px;
     
 }
 .content{
     height: calc(100vh - 90px);
     width: 100%;
-    background-color: rgb(165, 153, 42);
-    z-index: 1001;    
+    background-color: var(--color-main-background);   
 }
 header{
     background-color: rgba(0, 0, 0, 0.404);
@@ -39,7 +45,7 @@ header{
 }
 #sidebar{
     width: 200px;
-    background-color: rgb(43, 226, 119);
+    background-color: var(--color-sidebar-black);
     height: 100%;
 }
 main{
@@ -102,9 +108,23 @@ main{
 /* *** */
 
 /* main section */
+h2{
+    padding: 10px 0px 10px 0px;
+}
 .songs{
     padding: 5px;
+    width: 100%;
 }
 .songs img{
     width: 100%;
+}
+.name{
+    width: 100%;
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+.artist{
+    width: 100%;
+    font-size: 0.8em;
+    color: var(--color-artist-gray);
 }
