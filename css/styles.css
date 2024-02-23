@@ -110,7 +110,7 @@ h5{
     padding: 10px 0px 10px 0px;
     color: grey
 }
-.cover{
+/* .cover{
     position: relative;
     
 }
@@ -126,7 +126,7 @@ h5{
 }
 .cover:hover .play-song{
     opacity: 1;
-}
+} */
 .songs{
     padding: 5px;
     aspect-ratio: 1 / 1;
@@ -151,6 +151,7 @@ h5{
 /* popular artists */
 .popular-artists img{
     border-radius: 50%;
+    width: 100%;
 }
 
 /* sidebar section */
@@ -176,5 +177,15 @@ h5{
     }
     .songs{
         max-width: calc(100% / 4);
+    }
+}
+@media screen and (max-width: 768px){
+    .songs{
+        max-width: calc(100% / 2);
+    }
+}
+@media screen and (max-width: 576px){
+    .songs{
+        max-width: 100%;
     }
 }
