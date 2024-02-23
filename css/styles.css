@@ -160,13 +160,20 @@ h5{
     background-color: var(--color-sidebar-black);
     height: 100%;
     padding: 10px 40px 10px 10px;
+}
+#little-sidebar{
     
+    width: 100px;
+    background-color: white;
+    height: 100%;
+    z-index: 1001;
 }
 #big-logo{
 
 }
 #small-logo{
     display: none;
+    width: 50px;
 }
 .sidebar-content{
     height: 93%;
@@ -187,5 +194,19 @@ h5{
 @media screen and (max-width: 576px){
     .songs{
         max-width: 100%;
+    }
+    #big-logo{
+        display: none;
+    }
+    #small-logo{
+        display: block;
+        
+    }
+    #sidebar{
+        /* display: none; */
+        width: 100px;
+    }
+    #sidebar .shortcuts{
+        display: none;
     }
 }
