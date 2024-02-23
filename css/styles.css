@@ -111,6 +111,29 @@ main{
 h2{
     padding: 10px 0px 10px 0px;
 }
+h5{
+    padding: 10px 0px 10px 0px;
+    color: grey
+}
+.personal-playlists{
+    max-width: calc(100% / 6);
+}
+.cover{
+    position: relative;
+}
+.play-song{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    font-size: 2em;
+}
+.cover:hover img{    
+    opacity: 0.5;
+}
+.cover:hover .play-song{
+    opacity: 1;
+}
 .songs{
     padding: 5px;
     width: 100%;
@@ -122,9 +145,16 @@ h2{
     width: 100%;
     font-size: 1.3rem;
     margin-bottom: 5px;
+    text-align: center;
 }
 .artist{
     width: 100%;
     font-size: 0.8em;
     color: var(--color-artist-gray);
+    text-align: center;
+}
+/* popular artists */
+.popular-artists img{
+    border-radius: 50%;
+
 }
