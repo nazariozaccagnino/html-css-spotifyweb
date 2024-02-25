@@ -192,6 +192,13 @@ h5{
     }
 }
 @media screen and (max-width: 576px){
+    main{
+        width: calc(100% - 100px);
+    }
+    header{
+        width: calc(100% - 100px);
+        left: 100px;
+    }
     .songs{
         max-width: 100%;
     }
