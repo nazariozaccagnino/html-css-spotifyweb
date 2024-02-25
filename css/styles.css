@@ -179,15 +179,21 @@ h5{
     height: 100%;
     z-index: 1001;
 }
-#big-logo{
-
-}
 #small-logo{
     display: none;
     width: 50px;
 }
 .sidebar-content{
     height: 93%;
+}
+.shortcuts>*{
+    margin-bottom: 10px;
+    padding-left: 2px;
+    border-left: 5px solid rgba(0, 0, 0, 0);
+}
+.shortcuts>*:hover{
+    border-left: 5px solid green;
+
 }
 @media screen and (max-width: 992px){
     .song-wrapper{
