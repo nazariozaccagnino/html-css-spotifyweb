@@ -101,7 +101,21 @@ main{
     align-items: stretch;
 }
 /* *** */
-
+/* header section */
+.roundbutton{
+    width: 220px;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    right: 35px;
+    top: 20px;
+}
+.roundbutton:hover{
+    transform: scale(1.1);
+}
 /* main section */
 h2{
     padding: 10px 0px 10px 0px;
@@ -113,11 +127,8 @@ h5{
 /* .cover{
     position: relative;
     
-}
+}*/
 .play-song{
-    position: absolute;
-    top: 50%;
-    left: 50%;
     opacity: 0;
     font-size: 2em;
 }
@@ -126,7 +137,7 @@ h5{
 }
 .cover:hover .play-song{
     opacity: 1;
-} */
+}
 .songs{
     padding: 5px;
     aspect-ratio: 1 / 1;
