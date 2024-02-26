@@ -20,6 +20,13 @@ body{
 .debug{
     border: 2px solid red;
 }
+ul{
+    list-style: none;
+    
+}
+li a{
+    text-decoration: none;
+}
 .wrapper{
     height: 100vh;
     background-color: aqua;
@@ -124,13 +131,30 @@ h5{
     padding: 10px 0px 10px 0px;
     color: grey
 }
-/* .cover{
-    position: relative;
+nav ul li a{
+    padding: 5px 50px 0px 50px;
+    border-bottom: 2px solid;
+    border-color: transparent;
+    text-transform: uppercase;
+    color: var(--color-artist-gray);
+    text-align: center;
+}
+nav ul li a:hover{
+    color: white;
+    border-color: green;
+}
+
+.cover img{
     
-}*/
+    
+}
 .play-song{
     opacity: 0;
     font-size: 2em;
+    transform: translate(-50%, -50%);
+   
+    text-align: center;
+
 }
 .cover:hover img{    
     opacity: 0.5;
@@ -145,6 +169,7 @@ h5{
 }
 .songs img{
     width: 100%;
+    
 }
 .name{
     width: 100%;
@@ -168,32 +193,47 @@ h5{
 /* sidebar section */
 #sidebar{
     width: 200px;
-    background-color: var(--color-sidebar-black);
-    height: 100%;
+    background-color: var(--color-sidebar-black);    
     padding: 10px 40px 10px 10px;
 }
-#little-sidebar{
-    
+#little-sidebar{    
     width: 100px;
     background-color: white;
     height: 100%;
     z-index: 1001;
+}
+#big-logo{
+    margin-bottom: 20px;
 }
 #small-logo{
     display: none;
     width: 50px;
 }
 .sidebar-content{
-    height: 93%;
+    height: calc(100% - 70px);
+}
+.shortcuts img{
+    width: 15%;
 }
 .shortcuts>*{
     margin-bottom: 10px;
     padding-left: 2px;
     border-left: 5px solid rgba(0, 0, 0, 0);
 }
-.shortcuts>*:hover{
+.shortcuts>div:hover, .shortcuts>ul li:hover{
     border-left: 5px solid green;
-
+}
+.shortcuts h4:hover{
+    border-color: transparent;
+}
+.shortcuts i, .shortcuts ul{
+    padding: 10px 10px 10px 0px;
+}
+.shortcuts ul li{
+    padding-bottom: 10px;
+}
+.shortcuts ul li a{
+    color: var(--color-artist-gray);
 }
 @media screen and (max-width: 992px){
     .song-wrapper{
