@@ -269,8 +269,31 @@ nav ul li a:hover{
     text-decoration: none;
     color: white;
 }
+#toolbar .left{
+    width: 20%;
+}
+#toolbar .center{
+    width: 60%;
+}
+#toolbar .right{
+    width: 20%;
+}
 #toolbar .left>*{
     padding: 5px;
+}
+#toolbar .right>*{
+    padding: 5px;
+}
+.center-upper i{
+    /* max-width: 100%; */
+    /* font-size: 1.5em; */
+    padding: 10px 20px 10px 20px;    
+}
+.progress-bar{
+    width: 200px;
+    border-radius: 30px;
+    height: 10px;
+    background-color: gray;
 }
 @media screen and (max-width: 992px){
     .song-wrapper{
