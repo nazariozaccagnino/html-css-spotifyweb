@@ -226,14 +226,36 @@ nav ul li a:hover{
 .shortcuts h4:hover{
     border-color: transparent;
 }
+/* .shortcuts ul{
+    overflow-y: hidden;
+} */
 .shortcuts i, .shortcuts ul{
     padding: 10px 10px 10px 0px;
+    
 }
 .shortcuts ul li{
     padding-bottom: 10px;
+    
 }
 .shortcuts ul li a{
     color: var(--color-artist-gray);
+}
+.account>*{
+    padding-bottom: 5px;
+}
+.account hr{
+    width: 50px;   
+}
+.username img{
+    width: 20%;
+    aspect-ratio: 1 / 1;
+    background-color: grey;
+    border-radius: 50%;
+    vertical-align: middle;
+    padding: 5px;
+}
+.username span{
+    padding-left: 10px;
 }
 @media screen and (max-width: 992px){
     .song-wrapper{
