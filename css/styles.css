@@ -281,13 +281,14 @@ nav ul li a:hover:after{
     color: white;
 }
 #toolbar .left{
-    width: 20%;
+    max-width: 20%;
 }
-#toolbar .left div{
-    margin: 10px;
+#toolbar .left div>i{
+    margin: 5px;
+    max-width: 100%;
 }
 #toolbar .center{
-    width: 60%;
+    flex-grow: 1;
 }
 #toolbar .center div, #toolbar .right span{
     margin: 0px 10px 0px 10px;
@@ -307,6 +308,7 @@ nav ul li a:hover:after{
 .center-upper i:hover{
     transform: scale(1.3);
 }
+
 .progress-bar{
     max-width: 300px;
     width: 300px;
@@ -324,10 +326,26 @@ nav ul li a:hover:after{
     .songs{
         max-width: calc(100% / 4);
     }
+    #toolbar .left{
+        max-width: 20%;
+    }
+    #toolbar .playing-text{
+        max-width: 30%;
+    }
 }
 @media screen and (max-width: 768px){
     .songs{
         max-width: calc(100% / 2);
+    }    
+    #toolbar .right{
+        width: 10%;
+        flex-wrap: wrap;
+    }
+    #toolbar .right>i{
+        margin: 3px;
+    }
+    #toolbar .playing-text{
+        font-size: .8em;
     }
 }
 @media screen and (max-width: 576px){
@@ -349,9 +367,7 @@ nav ul li a:hover:after{
         
     }
     #sidebar{
-        /* display: none; */
-        width: 100px;
-        
+        width: 100px;        
     }
     #sidebar span, #sidebar ul, #sidebar h4{
         display: none;
@@ -369,4 +385,17 @@ nav ul li a:hover:after{
     .account hr{
         display: none;
     }
+    #toolbar .left{
+        flex-grow: 1;
+    }
+    #toolbar .center-upper i{
+        max-width: 100px;
+        padding: 10px 5px 10px 5px;
+        font-size: 1em;
+    }
+    #toolbar .center-lower>.progress-bar{
+        max-width: 100px;
+    }
+    #toolbar .right>.progress-bar{
+        display: none;
 }
