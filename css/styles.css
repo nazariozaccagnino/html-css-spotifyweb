@@ -367,7 +367,7 @@ nav ul li a:hover:after{
         
     }
     #sidebar{
-        width: 100px;        
+        width: 100px;    
     }
     #sidebar span, #sidebar ul, #sidebar h4{
         display: none;
@@ -394,8 +394,9 @@ nav ul li a:hover:after{
         font-size: 1em;
     }
     #toolbar .center-lower>.progress-bar{
-        max-width: 100px;
+        max-width: 150px;
     }
     #toolbar .right>.progress-bar{
         display: none;
+    }
 }
